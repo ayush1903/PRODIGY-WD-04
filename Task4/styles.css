@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #FBE9D0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #121212;
+    padding: 1em 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #FBE9D0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #E64833;
+}
+
+.section {
+    padding: 6em 0;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #212121;
+    padding-top: 100px; /* Offset for fixed header */
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.welcome-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#home h1 {
+    font-size: 3em;
+    color: #E64833;
+}
+
+#home p {
+    color: #90AEAD;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hire-me-btn {
+    background-color: #E64833;
+    color: #FBE9D0;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.hire-me-btn:hover {
+    background-color: #874F41;
+}
+
+.profile-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #244855;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+
+.profile-photo img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#about, #services, #portfolio, #contact {
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    margin: 2em 0;
+    padding: 2em 0;
+}
+
+h2 {
+    color: #E64833;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #121212;
+    color: #FBE9D0;
+    text-align: center;
+    padding: 1em 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
